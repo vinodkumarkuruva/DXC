@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Secret Santa</title>
+</head>
+<body>
+    <h1>Secret Santa Assignment</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="employee_file">Upload Employee XLSX File:</label>
+        <input type="file" name="employee_file" required>
+        <br><br>
+        <label for="previous_file">Upload Previous Assignments XLSX File:</label>
+        <input type="file" name="previous_file" required>
+        <br><br>
+        <button type="submit">Generate Secret Santa</button>
+    </form>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <ul>
+        {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+</body>
+</html>
