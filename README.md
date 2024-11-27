@@ -18,7 +18,8 @@ This program automates the Secret Santa assignment process for a group of employ
 
 * Installation
 
-  1.Clone this repository : git clone https://github.com/vinodkumarkuruva/Digital.git cd Digital
+  1.Clone this repository : git clone https://github.com/vinodkumarkuruva/DXC.git
+                            cd DXC
 
   2.Install the required dependencies : pip install -r requirements.txt
 
